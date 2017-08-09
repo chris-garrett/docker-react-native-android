@@ -3,7 +3,7 @@ services:
 
   app:
     container_name: links_app
-    image: chrisgarrett/react-native-android:24
+    image: chrisgarrett/react-native-android:24.3.4
     command: npm start
     ports:
     - 3000:3000

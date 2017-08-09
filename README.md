@@ -14,7 +14,7 @@ Assumes that `app` is the directory that contains your package.json.
 ```
 docker run --rm \
       -v `pwd`/examples/links/app:/work/app \
-      chrisgarrett/react-native-android:24 \
+      chrisgarrett/react-native-android:24.3.4 \
       npm start
 ```
 
@@ -28,7 +28,7 @@ contains a package.json file. For an example see `examples/links`.
 ```
 docker run --rm \
       -v `pwd`/examples/links/libs/mylib1:/work/app \
-      chrisgarrett/react-native-android:24 \
+      chrisgarrett/react-native-android:24.3.4 \
       npm start
 ```
 
@@ -37,7 +37,7 @@ docker run --rm \
 docker run --rm \
       -v `pwd`/examples/links/app:/work/app \
       -v `pwd`/examples/links/libs/mylib1:/work/libs/mylib1 \
-      chrisgarrett/react-native-android:24 \
+      chrisgarrett/react-native-android:24.3.4 \
       npm start
 ```
 
