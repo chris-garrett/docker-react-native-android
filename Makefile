@@ -12,7 +12,7 @@ prep:
 	VERSION=${IMAGE_VERSION} JAVA_VERSION=${JAVA_VERSION} NODE_VERSION=${NODE_VERSION} envsubst '$${VERSION} $${JAVA_VERSION} $${NODE_VERSION}' < ./templates/docker-compose.yml.template > docker-compose.yml
 
 build: prep
-	time docker build --rm=true -t ${IMAGE_NAME}:${IMAGE_VERSION} . 2>&1 | tee -a build.log
+	echo > build.log && time docker build --rm=true -t ${IMAGE_NAME}:${IMAGE_VERSION} . 2>&1 | tee -a build.log
 
 run:
 	docker run --rm -it \
