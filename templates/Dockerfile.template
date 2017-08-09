@@ -16,8 +16,6 @@ ADD scripts/entry.sh /entry.sh
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM alpine:3.6
-
 # A few reasons for installing distribution-provided OpenJDK:
 #
 #  1. Oracle.  Licensing prevents us from redistributing the official JDK.
