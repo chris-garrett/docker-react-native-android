@@ -1,0 +1,11 @@
+version: '2'
+services:
+
+  app:
+    container_name: links_app
+    image: chrisgarrett/react-native-android:${VERSION}
+    command: npm start
+    ports:
+    - 3000:3000
+    volumes:
+    - ./src:/work/app
